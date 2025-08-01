@@ -7,7 +7,7 @@ st.write("✅ L'application Streamlit fonctionne bien.")
 @st.cache_data
 def load_data():
     try:
-        df = pd.read_csv("Retail.csv", nrows=1000)
+        df = pd.read_csv("Retail.xlsx", nrows=1000)
         st.success("Fichier CSV chargé avec succès !")
         return df
     except Exception as e:
